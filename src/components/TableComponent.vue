@@ -40,14 +40,14 @@ const handleSort = (column) => {
 
 <style scoped>
 .main__table-container {
-  max-width: 600px; 
-  max-height: 600px; 
   overflow: auto; 
-  border: 1px solid #ddd;
+  border: 1px solid #dddddd;
   border-radius: 8px;
 }
 
 .main__table {
+  max-width: 600px;
+  max-height: 400px;
   width: 100%; 
   border-collapse: collapse;
   table-layout: fixed;
@@ -59,6 +59,7 @@ th, td {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 20%;
 }
 
 .sticky-header {
@@ -66,16 +67,16 @@ th, td {
   top: 0;
   background-color: #f1f1f1;
   z-index: 10;
-  border-top: 2px solid #ddd;
+  border-top: 2px solid #dddddd;
 }
 
 th {
   font-weight: bold;
-  color: #333;
+  color: #333333;
 }
 
 td {
-  color: #666;
+  color: #666666;
 }
 
 tbody tr:nth-child(even) {

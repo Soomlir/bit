@@ -24,7 +24,7 @@ const searchPhotos = () => {
 
 <template>
   <header class="header">
-    <h1>Bit - Test task</h1>
+    <h1 class="header__heading">Bit - Test task</h1>
     <div class="header__wrapper">
       <input
         class="header__search"
@@ -46,9 +46,17 @@ const searchPhotos = () => {
 </template>
 
 <style scoped>
+.header {
+  margin-bottom: 20px;
+}
+
 .header__wrapper {
   display: flex;
   align-items: stretch;
+}
+
+.header__heading {
+  font-size: 40px;
 }
 
 .header__search {
